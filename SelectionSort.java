@@ -18,11 +18,11 @@ public class SelectionSort {
 
                 }
             }
-
-            int temp=a[min];
-            a[min]=a[i];
-            a[i]=temp;
-
+            if(i!=min) {
+                int temp = a[min];
+                a[min] = a[i];
+                a[i] = temp;
+            }
         }
 
     }
